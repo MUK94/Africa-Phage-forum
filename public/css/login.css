@@ -1,0 +1,155 @@
+.login, .register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginBox, .registerBox {
+    margin-top: 2.5rem;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    box-shadow: 0.09rem 0.07rem 0.09rem 0.07rem #bbb;
+}
+
+.login h1, .register h1 {
+    text-align: center;
+    font-size: var(--subtitle-Font);
+    margin-bottom: 2rem;
+    font-weight: 500;
+    color: #555;
+    padding-bottom: 1rem;
+    border-bottom: 5px solid var(--btn-Color);
+}
+
+.login form, .register form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    font-size: 1rem;
+}
+
+form .row-input{
+    display: flex;
+    flex-direction: column;
+} 
+
+form .row-input label {
+    color: #333;
+    font-weight: bold;
+}
+
+form .row-input label,
+form .row-input input {
+    margin-bottom: 0.5rem;
+}
+
+form .row-input input,
+form .row-input .col-input input {
+    height: 40px;
+    width: 100%;
+    padding: 0.25rem 0.75rem;
+    border-radius: 2px;
+    background-color: rgb(245, 242, 246);
+    border: none;
+    font-weight: 300;
+    line-height: 2rem;
+    letter-spacing: 1px;
+}
+
+form input[type=text],
+form input[type=email],
+form input[type=password] {
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+form input:focus {
+    outline: none;
+}
+
+form input::placeholder {
+    font-family: inherit;
+}
+.row-input-remember{
+    padding-top: 0.5rem;
+}
+.row-input-btn .col-btn{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+button {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: inherit;
+    padding: 0.25rem;
+    letter-spacing: 1px;
+    font-family: inherit;
+    border: none;
+    background-color: var(--btn-Color);
+    border-radius: 2px;
+    box-shadow: 0 0.1rem 0.1rem 0 #666;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+
+.register form .outerLink{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 0.15rem 0.35rem;
+
+    
+}
+.register form .outerLink .innerLink{
+    font-family: inherit;
+    border: none;
+    background-color: var(--btn-Color);
+    border-radius: 2px;
+    box-shadow: 0 0.05rem 0.05rem 0 #666 ;
+    padding: 0.05rem 0.1rem;
+    letter-spacing: 1px;
+}
+.register form .outerLink .innerLink a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 460px) {
+    .login form,
+    .register form{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .login h1,
+    .register h1 {
+        font-size: 1.5rem;
+    }
+
+    .login form,
+    .register form {
+        width: 300px;
+    }
+
+    form .row-input label {
+        font-size: 0.9rem;
+    }
+
+    form input[type=text],
+    form input[type=email],
+    form input[type=password] {
+        font-size: 0.9rem;
+    }
+
+    .login form .outerLink {
+        font-size: 1rem;
+        margin-top: 1rem;
+        padding: 0.1rem 0.15rem;
+    }
+}

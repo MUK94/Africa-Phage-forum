@@ -1,0 +1,12 @@
+.adminReturn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.adminReturn a{
+    text-decoration: underline;
+    color: #bbb;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,12 @@
+.paginationLinks{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    
+}
+.paginationLinks .pagination-container a{
+    color: #6664d8;
+    font-size: 1.2rem;
+    padding: 0.25rem;
+    margin: 1rem;
+}

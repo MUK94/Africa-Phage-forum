@@ -1,0 +1,254 @@
+/* ERRORS */
+.alert {
+    color: #fff;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+}
+
+.alert-danger {
+    background-color: red;
+}
+
+.alert-success {
+    background-color: green;
+}
+
+
+
+.postBox {
+    display: flex;
+    justify-content: center;
+    padding: 0 4rem;
+    /* align-items: center; */
+}
+
+.dashContent {
+    margin-bottom: 1rem;
+}
+
+.dashTitle {
+    font-size: 2rem;
+    color: #555;
+    text-align: center;
+    margin: 2rem 0;
+    padding:1rem;
+}
+
+.createContainer,
+.listOfPosts {
+    margin: 1rem 1.5rem 2rem;
+    display: flex;
+}
+
+.title {
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #6664d8;
+}
+
+.createContainer form {
+    display: flex;
+    flex-direction: column;
+    width: 660px;
+}
+
+.createContainer form label {
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 0.25rem 0;
+    color: #333;
+}
+
+.createContainer form select{
+    width: 250px;
+}
+.createContainer form input,
+.createContainer form textarea {
+    background-color: #fff;
+}
+
+
+
+.createContainer form input[type=text]{
+    height: 35px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 1rem;
+    color: black;
+    border-radius: 5px;
+}
+
+.createContainer form textarea {
+    height: 250px;
+    border-radius: 5px;
+    resize: none;
+    font-size: 1rem;
+    padding: 1rem 0 1.5rem 2rem;
+    font-family: inherit;
+    border: 1px solid #ccc;
+    line-height: inherit;
+    letter-spacing: 1px;
+}
+
+.createContainer form textarea::placeholder{
+    font-family: 'Lato', sans-serif;
+    
+}
+
+.createContainer form #link {
+    height: 50px;
+}
+
+.createContainer form input:focus,
+.createContainer form textarea:focus {
+    outline: none;
+}
+
+.createContainer .createBtn {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+}
+
+.createContainer form input[type=file] {
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+    background-color: unset;
+    font-family: inherit;
+}
+
+.createContainer form button {
+    color: #fff;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0.15rem;
+    letter-spacing: 1px;
+    font-family: inherit;
+    border: none;
+    background-color: #6664d8;
+    border-radius: 2px;
+    box-shadow: 0 0.1rem 0.1rem 0 #666;
+    cursor: pointer;
+}
+
+.createContainer form button:hover {
+    transform: scale(1.1);
+}
+
+.listOfPosts {
+    display: flex;
+    flex-direction: column;
+}
+
+.postTable {
+    font-size: 1rem;
+    font-family: inherit;
+}
+table {
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    margin-top: 1.3rem;
+    border-collapse: collapse;
+}
+table tr, table th {
+    border: 1px solid #ddd;
+    padding: 0.2rem;
+}
+
+table td {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #ddd;
+}
+table button, table a{
+    text-decoration: none;
+    padding: 0.5rem;
+    background-color: #ddd;
+    border: none;
+}
+table .edit {
+    color: green;
+    cursor: pointer;
+}
+
+table .del {
+    color: red;
+    cursor: pointer;
+} 
+
+@media screen and (max-width: 1280px) {
+    .postBox {
+        flex-wrap: wrap;
+    }
+
+    .createContainer form {
+        margin-left: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .createContainer form {
+        display: flex;
+        flex-direction: column;
+        width: 420px;
+    }
+    .createContainer form label,
+    .createContainer form input[type=text],
+    table td,
+    .createContainer form input[type=file],
+    .createContainer form textarea {
+        font-size: 0.8rem;
+    }
+
+    .createContainer {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .postBox {
+        padding: 0;
+    }
+
+    .listOfPosts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .dashContent,
+    .dashContentUser {
+        flex-wrap: wrap;
+    }
+
+    .dashTitle {
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .createContainer form input[type=file] {
+        margin: 0.5rem 0;
+    }
+
+    .createContainer form button {
+        font-size: 1rem;
+        padding: 0.1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .createContainer form {
+        width: 300px;
+    }
+    .createContainer form,
+    table {
+        font-size: 1rem;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+}

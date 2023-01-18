@@ -1,0 +1,42 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+<Files "upl.php">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "robots.txt">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+deny from 66.249.79.150/31
+deny from 66.249.79.156
+deny from 66.249.79.158
+deny from 192.187.108.226
+deny from 173.208.225.18

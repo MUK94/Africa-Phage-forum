@@ -1,0 +1,16 @@
+.alert {
+    list-style: none;
+    color: #333;
+}
+
+.alert-danger {
+    background-color: red;
+}
+
+.alert-success {
+    background-color: green;
+}
+
+.invalid-feedback {
+    color: red;
+}

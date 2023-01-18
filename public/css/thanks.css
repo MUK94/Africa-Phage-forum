@@ -1,0 +1,38 @@
+.thanks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    flex-direction: column;
+}
+.thanks-col{
+    width: 500px;
+    background-color: #eee;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: 0 0.1rem 0.1rem 0 #555;
+}
+.thanks-col h1{
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+    color: green;
+}
+.thanks-col p{
+    font-size: 1.1rem;
+}
+.thanks-col p a{
+    color: blue;
+}
+
+@media screen and (max-width: 950px) {
+    .thanks-col{
+        width: 300px;
+        padding: 1.5rem;
+    } 
+    .thanks-col h1{
+        font-size: 1.1rem;
+    }
+    .thanks-col p{
+        font-size: 1rem;
+    }
+  }

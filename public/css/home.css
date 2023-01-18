@@ -1,0 +1,196 @@
+/* EVENT SECTION */
+
+.event-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.event {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 380px;
+    padding: 0.5rem;
+    margin: 1rem 0.5rem;
+    background-color: #eeeeee;
+    box-shadow: 0.05rem 0.1rem 0.1rem 0.05rem #e1e1e9;
+}
+
+ .event img {
+    width: 100%;
+    margin-bottom: 1rem;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+.eventTitle{
+    padding-bottom: 1.3rem;
+}
+.eventTitle h1{
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+    color: #6664d8;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.event .author-container{
+    padding: 0.25rem 0;
+    margin-bottom: 1rem;
+}
+.event .author-container h3{
+    margin-bottom: 0.25rem;
+    font-size: 1.1rem;
+    color: #222;
+}
+.event .author-container .authorBox {
+    font-size: 1rem;
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.event .eventSign{
+    padding: 0.5rem;
+    background-color: #6664d8;
+}
+.event .eventSign a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* |||||RESPONSIVE|||||| */
+
+
+@media screen and (max-width: 1200px) {
+    .event-container {
+        flex-wrap: wrap;
+        padding: 1rem 2rem;
+    }
+
+    .eventTitle {
+        padding: 0.5rem;
+        text-align: center;
+    }
+
+    .event .eventPoster {
+        width: 100%;
+        height: 380px;
+        object-fit: cover;
+        border-radius: 2px;
+    }
+
+    .event-box .authorBox {
+        margin: 0.15rem;
+        padding: 0.15rem;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .event img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .event-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .event {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .eventTitle {
+        padding: 0.1rem;
+        margin: 0;
+    }
+
+    .eventTitle h1 {
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+    }
+
+    .author-container {
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+    .authorBox {
+        margin: 0;
+        padding: 0.15rem;
+        width: 100%;
+    }
+
+    .event-container {
+        padding: 0.1rem 0.25rem;
+    }
+
+    .author-container h3 {
+        font-size: 1rem;
+    }
+
+    .authorBox span {
+        font-size: 1.1rem;
+    }
+
+    .event .authorBox {
+        font-size: 0.9rem;
+        text-align: justify;
+        padding: 0.1rem;
+    }
+
+    .event .eventSign {
+        text-align: center;
+
+    }
+
+    .event .eventSign a {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sectionTitle {
+        font-size: 1.7rem;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 0.5rem;
+    }
+    .event {
+        width: 280px;
+        padding: 0.25rem;
+    }
+    .event img {
+        height: 200px;
+    }
+    .eventTitle h1 {
+        margin-bottom: 0.75rem;
+        font-size: 1.1rem;
+    }
+    .event .author-container h3 {
+        font-size: 1rem;
+    }
+    .event .author-container .authorBox {
+        font-size: 0.9rem;
+    }
+    .event .eventSign a {
+        font-size: 1rem;
+    }
+}
