@@ -2,7 +2,7 @@
 # content management system (CMS) with a full functional admin panel/ dashboard
 
 # How to run the project?
-1. Edit the .ENV file according to you DB credentials
+1. Edit the .ENV file or add it according to you DB credentials
 2. Run Xampp (Apache + MySQL)
 3. Then Enjoy
 
